@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AES" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Blowfish" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CTR" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CTS" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DES" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KeyWrap" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PBE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RC2ArcFour" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RSA" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UTIL" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

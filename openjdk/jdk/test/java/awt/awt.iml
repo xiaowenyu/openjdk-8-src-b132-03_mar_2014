@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AlphaComposite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FontClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FontMetrics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GradientPaint" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Graphics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GraphicsDevice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GraphicsEnvironment" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/im" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/image" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Insets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/JAWT" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LightweightDispatcher" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Mixing" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MouseInfo" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MultipleGradientPaint" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Paint" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/PrintJob" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/security" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="openjdk" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="macosx" />
+    <orderEntry type="module" module-name="data" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

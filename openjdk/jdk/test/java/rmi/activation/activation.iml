@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/checkusage" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CommandEnvironment" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rmidViaInheritedChannel" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="doc" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="macosx" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

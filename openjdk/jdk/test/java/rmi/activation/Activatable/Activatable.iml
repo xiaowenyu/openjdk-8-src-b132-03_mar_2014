@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/checkActivateRef" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/checkAnnotations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/checkImplClassLoader" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/checkRegisterInLog" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/createPrivateActivable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/downloadParameterClass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/elucidateNoSuchMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/extLoadedImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/forceLogSnapshot" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inactiveGroup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lookupActivationSystem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/nestedActivate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/nonExistentActivatable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/notSerializable" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/restartCrashedService" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/restartLatecomer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/restartService" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/shutdownGracefully" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/unregisterInactive" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="doc" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="macosx" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

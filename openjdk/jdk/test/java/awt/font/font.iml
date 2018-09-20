@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/FontNames" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GlyphVector" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LineBreakMeasurer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/NumericShaper" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Rotate" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/StyledMetrics" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TextLayout" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Threads" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TransformAttribute" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="data" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

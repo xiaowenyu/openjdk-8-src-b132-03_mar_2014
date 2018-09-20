@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/7024749" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DynamicLayout" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameLocation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameSetSizeStressTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameSize" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/FrameStateTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HideMaximized" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HugeFrame" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InitialMaximizedTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InvisibleOwner" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LayoutOnMaximizeTest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MaximizedByPlatform" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MaximizedToIconified" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MaximizedToMaximized" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ResizeAfterSetFont" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ShapeNotSetSometimes" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ShownOffScreenOnWin98" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ShownOnPack" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UnfocusableMaximizedFrameResizablity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/WindowDragTest" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="openjdk" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="macosx" />
+    <orderEntry type="module" module-name="data" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

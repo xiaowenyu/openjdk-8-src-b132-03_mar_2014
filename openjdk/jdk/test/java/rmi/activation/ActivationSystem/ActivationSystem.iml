@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/activeGroup" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modifyDescriptor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/stubClassesPermitted" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/unregisterGroup" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="doc" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>

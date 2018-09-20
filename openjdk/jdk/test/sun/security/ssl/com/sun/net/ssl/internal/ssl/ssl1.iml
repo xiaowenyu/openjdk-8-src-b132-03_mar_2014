@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/AppInputStream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/AppOutputStream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CipherSuite" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ClientHandshaker" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DHKeyExchange" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EngineArgs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/GenSSLConfigs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/HandshakeOutStream" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/InputRecord" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ProtocolVersion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/rsa" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ServerHandshaker" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SocketCreation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/spi" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SSLContextImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SSLEngineImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SSLSessionContextImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SSLSessionImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SSLSocketImpl" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/X509KeyManager" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/X509TrustManagerImpl" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="golden" level="project" />
+    <orderEntry type="module" module-name="solaris" />
+    <orderEntry type="module" module-name="share2" />
+    <orderEntry type="module" module-name="macosx" />
+    <orderEntry type="module" module-name="windows" />
+  </component>
+</module>
