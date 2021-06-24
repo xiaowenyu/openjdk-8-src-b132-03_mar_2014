@@ -98,6 +98,7 @@ public class DriverManager {
      * jdbc.properties and then use the {@code ServiceLoader} mechanism
      */
     static {
+        // 静态初始化，启动初始化
         loadInitialDrivers();
         println("JDBC DriverManager initialized");
     }
@@ -355,6 +356,7 @@ public class DriverManager {
 
         /* Register the driver if it has not already been added to our list */
         if(driver != null) {
+            // 注册驱动器进来
             registeredDrivers.addIfAbsent(new DriverInfo(driver, da));
         } else {
             // This is for compatibility with the original DriverManager
@@ -558,17 +560,20 @@ public class DriverManager {
                 result = false;
             }
 
+            // 判断该驱动器是否符合驱动器的接口
              result = ( aClass == driver.getClass() ) ? true : false;
         }
 
         return result;
     }
 
+    // 主要是初始化，并不使用driver，使用需要看注册进来的
     private static void loadInitialDrivers() {
         String drivers;
         try {
             drivers = AccessController.doPrivileged(new PrivilegedAction<String>() {
                 public String run() {
+                    // 1.从系统的配置参数中获取 驱动实现类
                     return System.getProperty("jdbc.drivers");
                 }
             });
@@ -582,8 +587,9 @@ public class DriverManager {
 
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
             public Void run() {
-
+                //2.用spi的方式获取 java.sql.Driver的驱动实现类
                 ServiceLoader<Driver> loadedDrivers = ServiceLoader.load(Driver.class);
+                // 获取迭代器
                 Iterator<Driver> driversIterator = loadedDrivers.iterator();
 
                 /* Load these drivers, so that they can be instantiated.
@@ -600,6 +606,7 @@ public class DriverManager {
                  */
                 try{
                     while(driversIterator.hasNext()) {
+                        // 加载这些驱动器，让它们初始化
                         driversIterator.next();
                     }
                 } catch(Throwable t) {
@@ -619,6 +626,7 @@ public class DriverManager {
         for (String aDriver : driversList) {
             try {
                 println("DriverManager.Initialize: loading " + aDriver);
+                // 初始化配置的驱动器
                 Class.forName(aDriver, true,
                         ClassLoader.getSystemClassLoader());
             } catch (Exception ex) {
@@ -629,6 +637,7 @@ public class DriverManager {
 
 
     //  Worker method called by the public getConnection() methods.
+    // 获取连接，sql执行的时候用到
     private static Connection getConnection(
         String url, java.util.Properties info, Class<?> caller) throws SQLException {
         /*
@@ -658,9 +667,11 @@ public class DriverManager {
         for(DriverInfo aDriver : registeredDrivers) {
             // If the caller does not have permission to load the driver then
             // skip it.
+            // 判断是否符合驱动器的实现类
             if(isDriverAllowed(aDriver.driver, callerCL)) {
                 try {
                     println("    trying " + aDriver.driver.getClass().getName());
+                    // 调用驱动器的获取连接方法
                     Connection con = aDriver.driver.connect(url, info);
                     if (con != null) {
                         // Success!
