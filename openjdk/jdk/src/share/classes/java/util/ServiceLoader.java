@@ -216,9 +216,11 @@ public final class ServiceLoader<S>
      */
     public void reload() {
         providers.clear();
+        // 创建懒加载的迭代器
         lookupIterator = new LazyIterator(service, loader);
     }
 
+    // 创建serviceLoader，这是个迭代器的实现类，所以真正的实现在迭代器那
     private ServiceLoader(Class<S> svc, ClassLoader cl) {
         service = Objects.requireNonNull(svc, "Service interface cannot be null");
         loader = (cl == null) ? ClassLoader.getSystemClassLoader() : cl;
@@ -335,16 +337,19 @@ public final class ServiceLoader<S>
             this.loader = loader;
         }
 
+        // 拿到下一个接口 实现类的 全量名
         private boolean hasNextService() {
             if (nextName != null) {
                 return true;
             }
             if (configs == null) {
                 try {
+                    // META-INF/services/ + 接口的全量名
                     String fullName = PREFIX + service.getName();
                     if (loader == null)
                         configs = ClassLoader.getSystemResources(fullName);
                     else
+                        // 到extLoader下查找 所有jar包的 META-INF/services/ + 接口的全量名 这个文件
                         configs = loader.getResources(fullName);
                 } catch (IOException x) {
                     fail(service, "Error locating configuration files", x);
@@ -354,12 +359,15 @@ public final class ServiceLoader<S>
                 if (!configs.hasMoreElements()) {
                     return false;
                 }
+                // 解析第一个文件的内容，即实现类的全量名
                 pending = parse(service, configs.nextElement());
             }
+            // 复制全量名给nextName
             nextName = pending.next();
             return true;
         }
 
+        // 真正获取实例
         private S nextService() {
             if (!hasNextService())
                 throw new NoSuchElementException();
@@ -367,6 +375,7 @@ public final class ServiceLoader<S>
             nextName = null;
             Class<?> c = null;
             try {
+                // 用方式通过实现类的全量名加载出来
                 c = Class.forName(cn, false, loader);
             } catch (ClassNotFoundException x) {
                 fail(service,
@@ -379,6 +388,7 @@ public final class ServiceLoader<S>
             try {
                 S p = service.cast(c.newInstance());
                 providers.put(cn, p);
+                // 返回实例
                 return p;
             } catch (Throwable x) {
                 fail(service,
@@ -462,18 +472,21 @@ public final class ServiceLoader<S>
      * @return  An iterator that lazily loads providers for this loader's
      *          service
      */
+    // 迭代器的实现
     public Iterator<S> iterator() {
         return new Iterator<S>() {
 
             Iterator<Map.Entry<String,S>> knownProviders
                 = providers.entrySet().iterator();
 
+            // 预处理出实现类的全量名
             public boolean hasNext() {
                 if (knownProviders.hasNext())
                     return true;
                 return lookupIterator.hasNext();
             }
 
+            // 获取实例
             public S next() {
                 if (knownProviders.hasNext())
                     return knownProviders.next().getValue();
@@ -504,9 +517,11 @@ public final class ServiceLoader<S>
      *
      * @return A new service loader
      */
+    // spi入口
     public static <S> ServiceLoader<S> load(Class<S> service,
                                             ClassLoader loader)
     {
+        // 用类加载器loader 加载类全名为service的接口的实现类
         return new ServiceLoader<>(service, loader);
     }
 
